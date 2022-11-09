@@ -1,464 +1,353 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html {
-    font-family: R;
-}
-body {
-    font-family:"Open Sans", sans-serif;
-    color: #444444;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <link rel="stylesheet" href="./assest/img/background-header/background.jpg">
+    <link rel="stylesheet" href="./assest/font/Raleway/Raleway-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="./assest/img/for-describe/about-img.jpg">
+    <link rel="stylesheet" href="./assest/font/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assest/img/card/why-us-1.jpg">
+    <link rel="stylesheet" href="./assest/img/card/why-us-2.jpg">
+    <link rel="stylesheet" href="./assest/img/card/why-us-3.jpg">
 
-#wrapper{
-    position: relative;
+    <title>Web Siimple_</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="header-container">
+                <div class="siimple-logo">Siimple</div>
+                <!-- Navigator ở đây -->
+                <button type="button" class="nav-button">
+                    <i class="ti-menu"></i>
+                </button>
+            </div>
+            <div class="nav-menu">
+                <!-- <button type="button" class="nav-close-button">
+                    <i class="ti-close"></i>
+                </button> -->
+                <div class="nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#why-us">Why Us</a></li>
+                        <li class="nav-drop-down">
+                            <a href="#" >Drop Down</a>
+                            <ul class="sub-nav">
+                                <li class="padding-25"><a href="#">Drop Down 1</a></li>
+                                <li class="padding-25"><a href="#">Drop Down 2</a></li>
+                                <li class="padding-25"><a href="#">Drop Down 3</a></li>
+                                <li class="padding-25"><a href="#">Drop Down 4</a></li>
+                                <li class="padding-25"><a href="#">Drop Down 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
 
-}
-ul {
-    list-style: none;
-}
-.clear {
-    clear: both;
-}
-img {
-    max-width: 100%;
-}
-.float-right {
-    float: right !important;
-}
-.padding-25 {
-    padding-left: 25px;
-}
-.col {
-    float: left;
-    padding-left: 12px ;
-    padding-right: 12px ;
-    text-align: left;
-}
-.row {
-    margin-left: -8px;
-    margin-right: -8px;
-    max-width: 100%;
-}
-.col-half {
-    width: 50%;
-}
-.col-full {
-    width: 100%;
-}
-.col-third {
-    width: 33.33333%
-}
-.text-center {
-    text-align: center !important;
-}
-button {
-    background-color: #fd680e;
-    color: #fff;
-    margin: 10px;
-}
-a {
-    text-decoration: none;
-    color: #fd680e;
-}
+            
+        </div>
+        <div id="content">
+            <!-- Begin: Welcome -->
+            <div class="welcome">
+                <div class="welcome-container">
+                    <div class="welcome-text text-center">
+                        <h1 class="welcome-header">
+                            Welcome to Siimple
+                        </h1>
+                        <p class="welcome-desc">
+                            Please, fill out the for below to be notified for the latest updates!
+                        </p>
+                    </div>
+                    <!-- Send infomation section -->
+                    <div class="welcome-form" id="home">
+                        <form action="">
+                            <div class="row ">
+                                <div class="col col-half welcome-input">
+                                    <input type="text" placeholder="Your Name" id="name" class="form-control">
+                                </div>
+                                <div class="col col-half welcome-input">
+                                    <input type="email" placeholder="Your Email" id="email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="submit-btn">Notify Me!</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- end: welcome -->
+            <!-- Begin: Describe -->
+            <div class="des-container" id="about-us">
+                <div class="row">
+                    <div class="col col-half">
+                        <img src="./assest/img/for-describe/about-img.jpg" alt="Người" class="des-img">
+                    </div>
+                    <div class="col col-half">
+                        <h2 class="des-title">Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h2>
+                        <p class="des-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <ul class="des-list">
+                            <li><i class="ti-check-box"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                            <li><i class="ti-check-box"></i>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                            <li><i class="ti-check-box"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                        </ul>
+                        <p class="des-text">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!-- End: Describe -->
+            <!-- Begin: why-us  -->
+            <div class="why-us" id="why-us">
+                <div class="why-us-container">
+                    <div class="row">
+                        <div class="col col-third">
+                            <div class="card">
+                                <img src="/assest/img/card/why-us-1.jpg" alt="" class="card-img">
+                                <div class="card-icons text-center">
+                                    <i class="ti-book"></i>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="card-title">Our Mission</div>
+                                    <div class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-third">
+                            <div class="card">
+                                <img src="/assest/img/card/why-us-2.jpg" alt="" class="card-img">
+                                <div class="card-icons text-center">
+                                    <i class="ti-pencil-alt"></i>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="card-title">Our Plan</div>
+                                    <div class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-third">
+                            <div class="card">
+                                <img src="/assest/img/card/why-us-3.jpg" alt="" class="card-img">
+                                <div class="card-icons text-center">
+                                    <i class="ti-eye"></i>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="card-title">Our Vision</div>
+                                    <div class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!-- End: Why us -->
+            <!-- Begin: Asked -->
+            <div class="asked-questions">
+                <div class="asked-container">
+                    <h2 class="section-header">
+                        Frequenty Asked Questions
+                    </h2>
+                    <ul class="asked-list">
+                        <li>
+                            <p class="asked-to-visible">
+                                Non consectetur a erat nam at lectus urna duis?
+                                <i class="ti-arrow-down float-right"></i>
+                            </p>
+                            <div class="asked-hidden js-asked-hidden">
+                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                            </div>
+                        </li>
+                        <li>
+                            <p class="asked-to-visible">
+                                Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                                <i class="ti-arrow-down float-right"></i>
+                            </p>
+                            <div class="asked-hidden js-asked-hidden">
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                            </div>
+                        </li>
+                        <li>
+                            <p class="asked-to-visible">
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                                <i class="ti-arrow-down float-right"></i>
+                            </p>
+                            <div class="asked-hidden js-asked-hidden">
+                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                            </div>
+                        </li>
+                        <li>
+                            <p class="asked-to-visible">
+                                Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                                <i class="ti-arrow-down float-right"></i>
+                            </p>
+                            <div class="asked-hidden js-asked-hidden">
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                            </div>
+                        </li>
+                        <li>
+                            <p class="asked-to-visible">
+                                Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                                <i class="ti-arrow-down float-right"></i>
+                            </p>
+                            <div class="asked-hidden js-asked-hidden">
+                                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                            </div>
+                        </li>
+                        <li>
+                            <p class="asked-to-visible">
+                                Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?
+                                <i class="ti-arrow-down float-right"></i>
+                            </p>
+                            <div class="asked-hidden js-asked-hidden">
+                                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-#header{
-    height: 80px;
-    padding: 20px 0;
-    z-index: 10;
-    position: absolute;
-    left: 15px;
-    width: 100%;
-}
-.header-container {
-    display: flex;
-    justify-content: space-between;
-}
-.siimple-logo {
-    font-size: 36px;
-    line-height: 1;
-    font-weight: 100;
-    letter-spacing: 3px;
-    color: #fff;
-}
-#header .nav-button {
-    position: fixed;
-    right: 15px;
-    top: 15px;
-    z-index: 9998;
-    border: 0;
-    background: rgba(34, 34, 34, 0.5);
-    line-height: 1;
-    cursor: pointer;
-    text-align: right;
-    padding: 10px 12px;
-    border-radius: 2px;
-}
-.nav-menu {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: -340px;
-    z-index: 9999;
-    overflow-y: auto;
-    width: 340px;
-    padding-top: 18px;
-    
-}
-.nav-menu .nav {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0px;
-    z-index: 10000;
-    overflow-y: auto;
-    width: 260px;
-    padding-top: 18px;
-    background: rgba(34, 34, 34, 0.8);
-    
-}
-.sub-nav {
-    display: none;
-}
+            <!-- End: asked questions -->
+            <!-- Begin: Contact  -->
+            <div class="contact" id="contact-us">
+                <div class="contact-container">
+                    <h2 class="section-header">
+                        Contact Us
+                    </h2>
+                    <div class="row contact-content">
+                        <div class="col-left">
+                            <div class="info">
+                                <p>
+                                    <i class="ti-location-pin"></i>
+                                    A108 Adam Street
+                                    <br>
+                                    New York, NY 535022
+                                </p>
+                            </div>
+                            <div class="info">
+                                <p>
+                                    <i class="ti-email"></i>
+                                    info@example.com
+                                </p>
+                            </div >
+                            <div class="info">
+                                <p>
+                                    <i class="ti-mobile"></i>
+                                    +1 5589 55488 55s
+                                </p>
+                            </div>
+                            <div class="social-link">
+                                <i class="ti-twitter"></i>
+                                <i class="ti-facebook"></i>
+                                <i class="ti-instagram"></i>
+                                <i class="ti-linkedin"></i>
+                            </div>
+                        </div>
+                        <div class="col-right">
+                            <form action="forms" class="mail-form" method="post" role="form">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Your Name" class="contact-form-first">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Your email" class="contact-form">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Subject" class="contact-form">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="contact-form" name="Message" rows="5" placeholder="Message" required="" style="height: 35px;"></textarea>
+                                </div>
+                                <div  class="text-center">
+                                    <button type="submit" class="form-button">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!-- end: Contact -->
+        </div>
 
-.nav-menu a:hover {
-    color: #ffa26a;
-}
-.js-nav-menu {
-    right: 0 !important;
-}
-.js-nav-button {
-    display: none;
-}
-.nav-close-button {
-    right: 40px;
-    top: 15px;
-    z-index: 9999;
-    border: 0;
-    background: rgba(34, 34, 34, 0.5);
-    line-height: 1;
-    cursor: pointer;
-    text-align: right;
-    padding: 10px 12px;
-    border-radius: 2px;
-}
-.nav-menu a, .nav-menu a:focus {
-    display: block;
-    position: relative;
-    color: #ffd2b7;
-    padding: 10px 20px;
-    font-weight: 500;
-}
+        <div id="footer">
+            <div class="footer-container">
+                <div class="copyright">
+                    © Copyright 
+                    <strong>
+                        <span>
+                            Siimple
+                        </span>
+                    </strong>
+                    . All Rights Reserved
+                </div>
+                <div class="credit">
+                    Designed by 
+                    <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //cho phần navigation
+        var NavMenu = document.querySelector('.nav-menu');
+        var NavBtn = document.querySelector('.nav-button');
+        // var NavCloseBtn = document.querySelector('.nav-close-button');
 
+        // cho phần asked
+        var askedVisibles = document.querySelectorAll('.asked-to-visible')
+        var askedHidden = document.querySelectorAll('.js-asked-hidden')
 
-#content{
-    width: 100%;
-}
-.welcome {
-    position: relative;
-    background: url('/assest/img/background-header/background.jpg') center center;
-    background-size: cover;
-    background-repeat: no-repeat;
- 
-}
-#content .welcome-container {
-    
-    padding: 0 15px;
-    height: 570px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+        // cho phần drop down
+        var dropdown1 = document.querySelector('.nav-drop-down');
+        var dropdownVisi = document.querySelector('.sub-nav');
+        
+        
+        // function nav
+        // function openNav() {
+            //     NavMenu.classList.add('js-nav-menu');
+            //     NavBtn.classList.add('js-nav-button');
+            // }
+            // function closeNav() {
+                //     NavMenu.classList.remove('js-nav-menu');
+                //     NavBtn.classList.remove('js-nav-button');
+                // }
+        function openFunc() {
+            NavMenu.classList.toggle("js-nav-menu");
+            NavBtn.classList.toggle("nav-button-open");
+        }
+                
+        function visibleAsked() {
+            askedHidden.classList.remove('asked-hidden');
+        }
 
+        function dropdownHidden() {
+            dropdownVisi.classList.remove('sub-nav')
+        }
+        function dropdownVisible() {
+            dropdownVisi.classList.add('sub-nav')
+        }
 
-}
-#content .welcome-text {
-    font-family: "Raleway-ExtraLight", sans-serif;
-    top: 50%;
-}
-#content .welcome-header {
-    font-size: 48px;
-    font-weight: 400;
-    color: #222;
-    margin-bottom: 10px;
-    
-}
-#content .welcome-desc {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 30px;
-}  
-.welcome-form {
-    width: 556px;
-    margin-left: auto;
-    margin-right: auto;
-}  
-.form-control {
-    margin: 0 8px;
-    padding: 0 15px 2px 20px;
-    border-radius: 50px;
-    border: none;
-    font-size: 14px;
-    letter-spacing: 1px;
-    width: 250px;
-    height: 40px;
-}
-.submit-btn {
-    padding: 8px 30px;
-    border-radius: 50px;
-    border: none;
-    font-size: 16px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    line-height: 1.6;
-}
-.welcome-input {
-    margin-bottom: 10px;
-}
+        // 
+        NavBtn.addEventListener('click', openFunc);
+        // NavCloseBtn.addEventListener('click',closeNav);
 
-.des-container {
-    padding: 80px 0;
-    max-width: 1320px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-.des-img {
-    height: auto;
-}
-.des-title {
-    font-weight: 300;
-    font-size: 26px;
-    margin-bottom: 8px;
-    line-height: 1.2;
-}
-.des-subtitle {
-    font-style: italic;
-    margin-bottom: 16px;
-    font-size: 16px;
-}
-.des-list {
-    margin-bottom: 16px;
-}
-.des-list li, .des-text{
-    list-style: none;
-    padding-bottom: 10px;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: left;
-    
-}
-.des-list i {
-    margin-right: 10px;
-}
-.why-us {
-    background-color: #fff7f2;
-    padding: 80px 0 60px 0;
-}
-.why-us-container {
-    max-width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.why-us .card {
-    background-color: #fff;
-    line-height: 1.5;
-    letter-spacing: 0.8px;
-    border-radius: 3px;
-    box-shadow: 0px 2px 15px rgba(0 ,0 ,0, 0.1);
-}
-.card-img {
-    border-radius: 3px;
-}
-.card-body {
-    padding: 0px 16px 16px 16px;
-}
-.card-icons {
-    background-color: #fd680e;
-    font-size: 22px;
-    color: #fff;
-    padding-top: 13px;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    width: 64px;
-    height: 64px;
-    margin-left: auto;
-    margin-right: auto;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.card-title {
-    font-weight: 700;
-    font-size: 20px ;
-    color: #743e1d;
-    cursor: pointer;
-    margin-bottom: 8px;
-    margin-top: -20px;
-}
-.card-text {
-    color: #5e5e5e;
-    font-size: 16px;
-    text-align: left;
-}
-.why-us .card:hover .card-icons {
-    background-color: #fff;
-    color: #fd680e;
-}
-.card-title:hover {
-    color: #fd680e;
-}
-.asked-questions {
-    padding: 80px 0 60px 0;
-    
-}
-.asked-container {
-    padding: 0 12px 0 12px;
-    max-width: 1320px;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-.section-header {
-    text-align: center;
-    position: relative;
-    margin-bottom: 45px;
-    padding-bottom: 15px;
-    font-size: 32px;
-    font-weight: 100;
-}
-.asked-container h2::after, .contact-container h2::after{
-    content: "";
-    position: absolute;
-    display: block;
-    width: 80px;
-    height: 1.8px;
-    background: #fd680e;
-    bottom: 0;
-    left: calc(50% - 40px);
-}
+        for (const askedVisible of askedVisibles ){
+            askedVisible.addEventListener('click',visibleAsked);
+        }
 
-.asked-list {
-    list-style: none;
-}
-.asked-list p {
-    padding: 10px 0 0 0;
-    font-size: 18px;
-}
+        // if else 2 trường hợp
+        dropdown1.addEventListener('click',dropdownHidden);
+        // dropdown1.addEventListener('click',dropdownVisible);
+    </script>
 
-.asked-list li {
-    border-bottom: 1px solid #eee;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    color: #343a40;
-    cursor: pointer;
-    line-height: 24px;
-    font-size: 16px;
-    letter-spacing: 0.8px;
-}
-.asked-list li :hover {
-    color: #fd680e;
-}
-.asked-hidden {
-    /* display: none; */
-}
-
-.contact {
-    background-color: #fff7f2;
-    padding: 80px 0 80px 0;
-}
-.contact-container {
-    max-width: 850px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.contact-content {
-    display: flex;
-    justify-content: center !important;
-    flex-wrap: wrap;
-}
-.col-left{
-    padding-left: 12px;
-    padding-right: 12px;
-    
-    width: 40%;
-}
-.col-right {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: 60%;
-    
-}
-.col-left p {
-    padding-bottom: 10px;
-    margin-bottom: 28px;
-    font-size: 14px;
-    line-height: 22px;
-    
-}
-.info i {
-    padding-right: 36px;
-    font-size: 26px;
-    color: #fd680e;
-    float: left;
-}
-.social-link i {
-    background-color: #5a2c10;
-    color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-}
-.mail-form {
-    border-radius: 0%;
-    box-shadow: none;
-    font-size: 14px;
-}
-.contact-form {
-    
-    width: 100%;
-    padding: 6px 12px 6px 12px;   
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    margin-top: 16px;
-    border: 1px solid #ced4da;
-}
-.contact-form-first {
-    width: 100%;
-    padding: 6px 12px 6px 12px;   
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    border: 1px solid #ced4da;
-}
-.col-right .form-button {
-    background: #fd680e;
-    border: 0;
-    color: #fff;
-    padding: 10px 24px 10px 24px;
-    margin: 16px 0 0 0;
-}
-textarea.form-control {
-    min-height: 35px;
-}
-textarea {
-    resize: vertical;
-}
-#footer{
-    background: #2f1708;
-    padding: 30px 0;
-    color: #fff;
-    font-size: 14px;
-}
-.copyright {
-
-    text-align: center;
-}
-.credit {
-    padding-top: 10px;
-    text-align: center;
-    font-size: 13px;
-    color: #fff;
-}
+</body>
+</html>
