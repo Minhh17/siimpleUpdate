@@ -27,9 +27,9 @@
                 </button>
             </div>
             <div class="nav-menu">
-                <button type="button" class="nav-close-button">
+                <!-- <button type="button" class="nav-close-button">
                     <i class="ti-close"></i>
-                </button>
+                </button> -->
                 <div class="nav">
                     <ul>
                         <li><a href="#home">Home</a></li>
@@ -248,7 +248,7 @@
                                 <i class="ti-instagram"></i>
                                 <i class="ti-linkedin"></i>
                             </div>
-                        </div> 
+                        </div>
                         <div class="col-right">
                             <form action="forms" class="mail-form" method="post" role="form">
                                 <div class="form-group">
@@ -300,25 +300,31 @@
         //cho phần navigation
         var NavMenu = document.querySelector('.nav-menu');
         var NavBtn = document.querySelector('.nav-button');
-        var NavCloseBtn = document.querySelector('.nav-close-button');
+        // var NavCloseBtn = document.querySelector('.nav-close-button');
+
         // cho phần asked
         var askedVisibles = document.querySelectorAll('.asked-to-visible')
         var askedHidden = document.querySelectorAll('.js-asked-hidden')
+
         // cho phần drop down
         var dropdown1 = document.querySelector('.nav-drop-down');
         var dropdownVisi = document.querySelector('.sub-nav');
-
-
-        // function
-        function openNav() {
-            NavMenu.classList.add('js-nav-menu');
-            NavBtn.classList.add('js-nav-button');
+        
+        
+        // function nav
+        // function openNav() {
+            //     NavMenu.classList.add('js-nav-menu');
+            //     NavBtn.classList.add('js-nav-button');
+            // }
+            // function closeNav() {
+                //     NavMenu.classList.remove('js-nav-menu');
+                //     NavBtn.classList.remove('js-nav-button');
+                // }
+        function openFunc() {
+            NavMenu.classList.toggle("js-nav-menu");
+            NavBtn.classList.toggle("nav-button-open");
         }
-        function closeNav() {
-            NavMenu.classList.remove('js-nav-menu');
-            NavBtn.classList.remove('js-nav-button');
-        }
-
+                
         function visibleAsked() {
             askedHidden.classList.remove('asked-hidden');
         }
@@ -330,9 +336,9 @@
             dropdownVisi.classList.add('sub-nav')
         }
 
-        // Phần gì đó
-        NavBtn.addEventListener('click',openNav);
-        NavCloseBtn.addEventListener('click',closeNav);
+        // 
+        NavBtn.addEventListener('click', openFunc);
+        // NavCloseBtn.addEventListener('click',closeNav);
 
         for (const askedVisible of askedVisibles ){
             askedVisible.addEventListener('click',visibleAsked);
